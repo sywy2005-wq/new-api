@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: new-api
+    runtime: image
+    image:
+      url: docker.io/calciumion/new-api:latest
+    plan: free
+    envVars:
+      - key: SQL_DSN
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: TOKEN_SECRET
+        generateValue: true
+      - key: TZ
+        value: Asia/Shanghai
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
