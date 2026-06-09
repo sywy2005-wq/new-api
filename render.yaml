@@ -14,7 +14,3 @@ services:
         generateValue: true
       - key: TZ
         value: Asia/Shanghai
-    disk:
-      name: data
-      mountPath: /data
-      sizeGB: 1
