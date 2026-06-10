@@ -6,6 +6,8 @@ services:
       url: docker.io/calciumion/new-api:latest
     plan: free
     envVars:
+      - key: SQL_DSN
+        value: postgresql://neondb_owner:npg_cbi2LQ7rRJnj@ep-purple-glitter-aok4c6un-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
       - key: SESSION_SECRET
         generateValue: true
       - key: TOKEN_SECRET
