@@ -14,3 +14,5 @@ services:
         generateValue: true
       - key: TZ
         value: Asia/Shanghai
+      - key: FORCE_RATE_LIMIT_DISABLE
+        value: "true"
