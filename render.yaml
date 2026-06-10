@@ -7,7 +7,7 @@ services:
     plan: free
     envVars:
       - key: SQL_DSN
-        sync: false
+        value: postgresql://postgres.dneeirrqhorhhrygxxzs:6Ge%2Fuw2%2CXCNCDpB@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres
       - key: SESSION_SECRET
         generateValue: true
       - key: TOKEN_SECRET
