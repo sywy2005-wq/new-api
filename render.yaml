@@ -6,13 +6,9 @@ services:
       url: docker.io/calciumion/new-api:latest
     plan: free
     envVars:
-      - key: SQL_DSN
-        value: postgresql://postgres.dneeirrqhorhhrygxxzs:6Ge%2Fuw2%2CXCNCDpB@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
       - key: SESSION_SECRET
         generateValue: true
       - key: TOKEN_SECRET
         generateValue: true
       - key: TZ
         value: Asia/Shanghai
-      - key: FORCE_RATE_LIMIT_DISABLE
-        value: "true"
